@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ninja Turtle Memmory game</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: darkblue;
+    }
+    #wrapper {
+      width: 1440px;
+      height: 690px;
+      border: solid 3px black;
+      margin: auto;
+      background-color: deepskyblue;
+    }
+    #speler1 {
+      display: inline-block;
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      border: solid black 1px;
+      background-color: yellow;
+      float: left;
+      margin-left: 5%;
+    }
+
+    #beurtspeler {
+      display: inline-block;
+      text-align: center;
+      margin-left: 25%;
+      width: 300px;
+      height: 50px;
+      border: black 1px solid;
+      background-color: palevioletred;
+      color: white;
+    }
+    #speler2 {
+      display: inline-block;
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      border: solid black 1px;
+      background-color: yellow;
+      float: right;
+      margin-right: 5%;
+    }
+    h2 {
+      color: black;
+    }
+    h3 {
+      color: black;
+    }
+    #fotosFrame{
+      position: absolute;
+      bottom: 150px;
+      left: 17.3%;
+      width: 1000px;
+      height: 500px;
+      background-color: deepskyblue;
+      margin: auto;
+    }
+    div.picture-holder {
+      box-sizing: border-box;
+      height: 160px;
+      width: 160px;
+      background-color: white;
+      float: left;
+      border: solid 1px black;
+      margin: 3px;
+    }
+    img{
+      visibility: hidden;
+    }
+    button{
+        position: absolute;
+        top: 620px;
+        left: 690px;
+        width: 140px;
+        height: 60px;
+        background-color: gold;
+    }
+    #containerInstructions{
+        background-color: white;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+    <span>
+        <span id="speler1"><h3>speler1</h3></span>
+        <span id="beurtspeler"><h3 style="color: white">Ninja Turtles</h3></span>
+        <span id="speler2"><h3>speler2</h3></span>
+    </span>
+  <div id="fotosFrame"></div>
+      <button id="nextPlayer" onclick="switchPlayer()">NEXT TURN</button>
+</div>
+<div id="containerInstructions">
+<h2>Instructions:</h2>
+<h3>You can Either play single player or 2 players this Memomory game!</h3>
+    <h4>Dont press the button: NEXT TURN, if you want to play single player!</h4>
+    <h4>Otherwise after you do not get a match press the button: NEXT TURN. This will activate 2 player memomory!
+    now it is player 2 turn! keep repeating this proces.</h4>
+</div>
+<script src="praktijkopdracht.js"></script>
+</body>
+</html>
